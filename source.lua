@@ -477,11 +477,11 @@ local library = {
 		easingDirection = Enum.EasingDirection.Out
 	},
 	colors = {
-		main = Color3.fromRGB(255, 39, 39),
-		background = Color3.fromRGB(40, 40, 40),
-		outerBorder = Color3.fromRGB(15, 15, 15),
+		main = Color3.fromRGB(255, 117, 3),
+		background = Color3.fromRGB(0, 0, 0),
+		outerBorder = Color3.fromRGB(0, 0, 0),
 		innerBorder = Color3.fromRGB(73, 63, 73),
-		topGradient = Color3.fromRGB(35, 35, 35),
+		topGradient = Color3.fromRGB(0, 0, 0),
 		bottomGradient = Color3.fromRGB(29, 29, 29),
 		sectionBackground = Color3.fromRGB(35, 34, 34),
 		section = Color3.fromRGB(176, 175, 176),
@@ -7352,9 +7352,9 @@ function library:CreateWindow(options, ...)
 		}
 		local daaata = {{"AddTextbox", "__Designer.Textbox.ImageAssetID", backgroundsection, {
 			Name = "Image Asset ID",
-			Placeholder = "rbxassetid://4427304036",
+			Placeholder = " ",
 			Flag = "__Designer.Background.ImageAssetID",
-			Value = "rbxassetid://4427304036",
+			Value = " ",
 			Callback = updatecolorsnotween
 		}}, {"AddColorpicker", "__Designer.Colorpicker.ImageColor", backgroundsection, {
 			Name = "Image Color",
@@ -7473,7 +7473,7 @@ function library:CreateWindow(options, ...)
 		end
 		if options.Credit ~= false then
 			daaata[1 + #daaata] = {"AddLabel", "__Designer.Label.Creator", detailssection, {
-				Text = "Library by Pepsi#5229 "
+				Text = "Exodia was created by getexodia.github.io "
 			}}
 		elseif "Gee, thanks for your support." then
 		end
